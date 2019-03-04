@@ -1,0 +1,54 @@
+{
+    "car_data":[
+        {
+            "make": "BMW",
+            "model": "I8",
+            "year": "2015",
+            "imageURL": "https://67degreescdn.co.uk/7/3/lt15uus.jpg?width=1920&height=1080&crop=auto",
+            "quality" : [{
+                "name" : "overall",
+                "rating" : 1
+            },{
+                "name" : "mechanical",
+                "rating" : 4
+            },{
+                "name" : "powertrain",
+                "rating" : 2
+            },{
+                "name" : "body",
+                "rating" : 4
+            },{
+                "name" : "interior",
+                "rating" : 3
+            },{
+                "name" : "accessories",
+                "rating" : 2
+            }]
+        },
+        {
+            "make": "BMW",
+            "model": "M6",
+            "year": "2015",
+            "imageURL": "https://67degreescdn.co.uk/7/3/img-5207-6.jpg?width=1920&height=1080&crop=auto",
+            "quality" : [{
+                "name" : "overall",
+                "rating" : 1
+            },{
+                "name" : "mechanical",
+                "rating" : 4
+            },{
+                "name" : "powertrain",
+                "rating" : 2
+            },{
+                "name" : "body",
+                "rating" : 4
+            },{
+                "name" : "interior",
+                "rating" : 3
+            },{
+                "name" : "accessories",
+                "rating" : 2
+            }]
+        }
+    ]
+}
