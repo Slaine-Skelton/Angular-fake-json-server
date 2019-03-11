@@ -1,5 +1,5 @@
 <div class="ui raised segment">
-  <div class="ui two column very relaxed grid ">
+  <div class="ui three column very relaxed grid ">
       <div class="column">
         <div *ngIf="carData">
           <h3>Make: {{carData.make}}</h3>
@@ -9,7 +9,7 @@
       </div>
       <div class="column">
         <div *ngIf="carData">
-          <img src={{carDate.imageURL}} [style.width.px]='carImageWidth'>
+          <img src={{carData.imageURL}} [style.width.px]='carImageWidth'>
         </div>
       </div>
       <div class="column">

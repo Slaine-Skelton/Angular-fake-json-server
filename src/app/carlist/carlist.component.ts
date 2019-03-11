@@ -17,4 +17,7 @@ export class CarlistComponent implements OnInit {
       {this.carsData = carsData});
   }
 
+  addCar(evt){
+    this.carsData.push(evt);
+  }
 }

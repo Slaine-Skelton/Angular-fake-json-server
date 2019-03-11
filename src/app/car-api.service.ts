@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable } from 'rxjs/';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/catch';
+import { Observable } from 'rxjs';
+import { catchError, tap } from 'rxjs/operators';
 
 
 @Injectable()
@@ -13,9 +12,9 @@ export class CarApiService {
   constructor(private _http: HttpClient) { }
 
   getCarData(): Observable<ICar[]>{
-    return this._http.get<ICar>(this._siteURL)
-    .do(data => console.log('All: ' + JSON.stringify(data)))
-    .catch(this.handleError);
+    return this._http.get<ICar[]>(this._siteURL).pipe(
+      tap(data => console.log('All: ' + JSON.stringify(data))),
+      catchError(this.handleError));
   }
 
   private handleError(err: HttpErrorResponse) {
