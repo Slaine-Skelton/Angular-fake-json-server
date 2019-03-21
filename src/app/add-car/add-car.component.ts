@@ -13,7 +13,9 @@ export class AddCarComponent implements OnInit {
 
   constructor() { }
 
-  addCar(make:string,model:string,year:string,imageURL:string) : boolean {
+  addCar(make:string,model:string,year:string,imageURL:string//,quality:ICarQuality[]
+    ) : boolean {
+    //let tempCar = new Car(make,model,year,imageURL,quality);
     let tempCar = new Car(make,model,year,imageURL);
     this.addCarEE.emit(tempCar);
     return false;

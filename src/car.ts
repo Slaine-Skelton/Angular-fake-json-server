@@ -4,10 +4,14 @@ export class Car implements ICar {
     year: string;
     imageURL: string;
     quality: ICarQuality[];
+    myReview: string;
+
     constructor(make:string,model:string,year:string,imageURL:string){
         this.make = make;
         this.model = model;
         this.year = year;
         this.imageURL = imageURL;
+        //this.quality = quality;
+        //this.myReview = myReview;
     }
 }

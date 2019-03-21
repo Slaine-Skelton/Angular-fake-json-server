@@ -3,7 +3,8 @@ interface ICar{
     model: string;
     year: string;
     imageURL: string;
-    quality: ICarQuality[]; 
+    quality: ICarQuality[];
+    myReview: string;
 }
 
 interface ICarQuality{
